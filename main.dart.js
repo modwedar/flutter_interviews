@@ -24372,23 +24372,23 @@ k=j}q.XB(new A.EI(m,B.Ht,l,k,null))
 q.Jq()
 return A.O(null,r)}})
 return A.P($async$a3s,r)},
-aXs(a){var s,r,q,p,o,n,m="categories",l="category",k=t.kc.a(a.h(0,"content"))
-if(k==null)k=[]
-k=J.hm(k,new A.ajd(),t.Kg)
-s=A.a_(k,k.$ti.i("au.E"))
-if(a.h(0,m)!=null)r=A.eU(a.h(0,m),!0,t.N)
-else{k=t.s
-r=a.h(0,l)!=null?A.a([a.h(0,l)],k):A.a(["basics"],k)}if(a.h(0,"levels")!=null)q=A.eU(a.h(0,"levels"),!0,t.N)
-else{k=t.s
-q=a.h(0,"level")!=null?A.a([a.h(0,"level")],k):A.a(["junior"],k)}A.bP(a.h(0,"id"))
-k=A.ag(a.h(0,"title"))
-p=A.ag(a.h(0,"difficulty"))
-if(p==null)p="easy"
-o=A.ag(a.h(0,"frequency"))
-if(o==null)o="medium"
-n=A.ag(a.h(0,"type"))
-if(n==null)n="paid"
-return new A.fh(k,p,o,r,q,n,A.ag(a.h(0,"interview_answer")),s)},
+aXs(a){var s,r,q,p,o,n,m,l="categories",k="category",j=t.kc.a(a.h(0,"content"))
+if(j==null)j=[]
+j=J.hm(j,new A.ajd(),t.Kg)
+s=A.a_(j,j.$ti.i("au.E"))
+if(a.h(0,l)!=null)r=A.eU(a.h(0,l),!0,t.N)
+else{j=t.s
+r=a.h(0,k)!=null?A.a([a.h(0,k)],j):A.a(["basics"],j)}if(a.h(0,"levels")!=null)q=A.eU(a.h(0,"levels"),!0,t.N)
+else{j=t.s
+q=a.h(0,"level")!=null?A.a([a.h(0,"level")],j):A.a(["junior"],j)}j=A.bP(a.h(0,"id"))
+p=A.ag(a.h(0,"title"))
+o=A.ag(a.h(0,"difficulty"))
+if(o==null)o="easy"
+n=A.ag(a.h(0,"frequency"))
+if(n==null)n="medium"
+m=A.ag(a.h(0,"type"))
+if(m==null)m="paid"
+return new A.fh(j,p,o,n,r,q,m,A.ag(a.h(0,"interview_answer")),s)},
 JI:function JI(a){this.a=a},
 JM:function JM(a){this.a=a},
 a4u:function a4u(){},
@@ -24481,15 +24481,16 @@ _.e=c
 _.f=d
 _.a=e},
 ajc:function ajc(a){this.a=a},
-fh:function fh(a,b,c,d,e,f,g,h){var _=this
-_.b=a
-_.c=b
-_.d=c
-_.e=d
-_.f=e
-_.r=f
-_.w=g
-_.x=h},
+fh:function fh(a,b,c,d,e,f,g,h,i){var _=this
+_.a=a
+_.b=b
+_.c=c
+_.d=d
+_.e=e
+_.f=f
+_.r=g
+_.w=h
+_.x=i},
 ajd:function ajd(){},
 mq:function mq(a,b){this.a=a
 this.b=b},
@@ -83528,9 +83529,9 @@ if(!B.d.t(s.toLowerCase(),q))return!1}return!0},
 $S:503}
 A.asJ.prototype={
 $2(a,b){var s=a.r==="free"
-if(s&&b.r!=="paid")return-1
+if(s&&b.r!=="free")return-1
 if(!s&&b.r==="free")return 1
-return 0},
+return B.c.aW(a.a,b.a)},
 $S:504}
 A.at0.prototype={
 $0(){var s=this.a
